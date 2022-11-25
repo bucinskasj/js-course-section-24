@@ -1,1 +1,1 @@
-Repository for the Section 24 of the JavaScript course
+Repository for the Section 24 of the JavaScript course. Check
