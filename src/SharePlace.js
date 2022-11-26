@@ -8,8 +8,23 @@ class PlaceFinder {
   }
 
   locateUserHandler() {
-    
+    if (!navigator.geolocation) {
+      alert('Location feature is not available in your browser');
+    return;
+    }
+    navigator.geolocation.getCurrentPosition(successResult => {
+      const coordinates = {
+        lat: successResult.coords.latitude,
+        lng: successResult.coords.longitude
+      };
+      console.log(coordinates);
+    }, 
+    error => {
+      alert('Could not locate you unfortunately');
+    });
   };
 
   findAddressHandler() {};
 }
+
+new PlaceFinder();
