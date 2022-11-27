@@ -1,4 +1,4 @@
-const GOOGLE_API_KEY = 'ADD_KEY' // Google maps API key
+const GOOGLE_API_KEY = '' // Google maps API key
 
 
 export async function getAddressFromCoords(coords) {
